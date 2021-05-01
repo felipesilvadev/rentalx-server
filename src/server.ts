@@ -5,9 +5,9 @@ import 'express-async-errors';
 import swagger from 'swagger-ui-express';
 
 import './database';
-import './shared/container';
+import '@shared/container';
+import { AppError } from '@errors/AppError';
 
-import { AppError } from './errors/AppError';
 import { routes } from './routes';
 import swaggerSetup from './swagger.json';
 
